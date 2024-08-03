@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dl-learning"
+version = "0.1.0"
+description = ""
+authors = ["pratos <prthamesh.sarang@gmail.com>"]
+packages = [{include = "src/"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyterlab = "^4.0.2"
+
+[tool.poetry.scripts]
+install-torch = "scripts.custom_installer:install_torch"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
