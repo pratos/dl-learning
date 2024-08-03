@@ -34,10 +34,7 @@ def install_torch():
     try:
         import torch
         import torchvision
-        import torchaudio
         import lightning
-        import transformers
-        import torchmetrics
 
         print(f"PyTorch version: {torch.__version__}")
         print(f"TorchVision version: {torchvision.__version__}")
